@@ -21,9 +21,6 @@ Zig version: `0.16.0-dev.3121+d34b868bc`
 
 ## Usage
 
-> [!NOTE]
-> This is a proof-of-concept tool; it will only work with games that export all required il2cpp symbols.
-
 To use the tool, replace `gfsdk.dll` in game directory with the compiled DLL.
 
 When `GameAssembly` initializes, il2cpp-dumper will generate the C# definitions in the `cs` folder near the game executable.

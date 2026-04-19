@@ -7,7 +7,7 @@ pub fn build(b: *std.Build) void {
     );
 
     const dll = b.addLibrary(.{
-        .name = "il2cpp-dumper",
+        .name = "gfsdk",
         .linkage = .dynamic,
         .root_module = b.createModule(.{
             .root_source_file = b.path("src/root.zig"),

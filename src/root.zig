@@ -2,6 +2,10 @@ const std = @import("std");
 const Il2cpp = @import("Il2cpp.zig");
 const dumper = @import("dumper.zig");
 
+comptime {
+    _ = @import("exports.zig");
+}
+
 const windows = std.os.windows;
 const unicode = std.unicode;
 const Io = std.Io;

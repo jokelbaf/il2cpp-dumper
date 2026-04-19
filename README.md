@@ -2,6 +2,9 @@
 
 A proof-of-concept runtime dumper for il2cpp games.
 
+> [!IMPORTANT]
+> The branch demonstrates how to load the dumper into the game by replacing an existing DLL and re-exporting its symbols. **It will only work with Endfield.**
+
 ## Features
 
 Currently implemented features:
@@ -21,9 +24,7 @@ Zig version: `0.16.0-dev.3121+d34b868bc`
 > [!NOTE]
 > This is a proof-of-concept tool; it will only work with games that export all required il2cpp symbols.
 
-To use the tool, you need to inject the generated DLL into the game process. Use [Proton Injector](https://github.com/jokelbaf/proton-injector) for Linux or [Pydll Injector](https://github.com/jokelbaf/pydll-injector) for Windows. 
-
-Alternatively, you could replace an existing game DLL and re-export its symbols to load your dll without using an injector. See an example [here](https://github.com/jokelbaf/il2cpp-dumper/tree/akef).
+To use the tool, replace `gfsdk.dll` in game directory with the compiled DLL.
 
 When `GameAssembly` initializes, il2cpp-dumper will generate the C# definitions in the `cs` folder near the game executable.
 

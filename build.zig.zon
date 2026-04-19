@@ -1,0 +1,11 @@
+.{
+    .name = .il2cpp_dumper,
+    .version = "0.1.0",
+    .fingerprint = 0xf199db87ef7da349,
+    .minimum_zig_version = "0.16.0-dev.3121+d34b868bc",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}

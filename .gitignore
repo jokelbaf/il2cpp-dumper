@@ -1,0 +1,3 @@
+zig-out/
+testing/
+.zig-cache/

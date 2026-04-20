@@ -5,6 +5,7 @@ on:
       - master
     paths:
       - 'build.zig.zon'
+  workflow_dispatch:
 
 jobs:
   release:

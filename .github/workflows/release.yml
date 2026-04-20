@@ -1,0 +1,17 @@
+name: Create Release
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'build.zig.zon'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: jokelbaf/zig-release@v1.0.0
